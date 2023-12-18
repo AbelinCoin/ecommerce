@@ -12,7 +12,12 @@
 }
 
 .logo {
-  width: 150px;
+  width: 5.5rem;
+  height: auto;
+  object-fit: cover;
+  @include small-break {
+    width: 5rem;
+  }
 }
 
 :global([data-theme="light"]) {
