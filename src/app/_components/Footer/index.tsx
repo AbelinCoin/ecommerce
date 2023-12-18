@@ -36,7 +36,6 @@ export async function Footer() {
           </picture>
         </Link>
         <nav className={classes.nav}>
-          <ThemeSelector />
           {navItems.map(({ link }, i) => {
             return <CMSLink key={i} {...link} />
           })}
@@ -46,10 +45,10 @@ export async function Footer() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Source Code
+            Twitter
           </Link>
           <Link href="https://payloadcms.com" target="_blank" rel="noopener noreferrer">
-            Payload
+            Instagram
           </Link>
         </nav>
       </Gutter>
