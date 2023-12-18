@@ -2,12 +2,16 @@
 
 .nav {
   display: flex;
-  gap: calc(var(--base) / 4) var(--base);
+  gap: calc(var(--base) / 2) var(--base);
   align-items: center;
   flex-wrap: wrap;
   opacity: 1;
   transition: opacity 100ms linear;
   visibility: visible;
+  
+  @include small-break {
+    gap: 1rem;
+  }
 
   > * {
     text-decoration: none;
