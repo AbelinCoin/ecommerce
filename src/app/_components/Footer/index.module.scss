@@ -1,12 +1,15 @@
 @use '../../_css/queries.scss' as *;
 
 .footer {
-  padding: 3rem;
+  padding: calc(var(--base) * 2) 0;
   background-color: var(--theme-elevation-1000);
   color: var(--theme-elevation-0);
+  position: relative; /* Fija el footer en la parte inferior */
+  bottom: 0; /* Lo sitúa en la parte inferior */
+  width: 100%; /* Ocupa todo el ancho */
 
   @include small-break {
-    padding: 2rem; 
+    padding: calc(var(--base) * 2) 0;
   }
 }
 
@@ -22,19 +25,11 @@
   justify-content: space-between;
   flex-wrap: wrap;
   gap: calc(var(--base) / 2) var(--base);
-  
-  @include small-break {
-    justify-content: center;
-  }
 }
 
 .logo {
-  width: 5.5rem;
+  width:5rem;
   height: auto;
-  object-fit: cover;
-  @include small-break {
-    width: 5rem;
-  }
 }
 
 .nav {

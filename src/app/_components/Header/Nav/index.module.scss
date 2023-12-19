@@ -8,7 +8,6 @@
   opacity: 1;
   transition: opacity 100ms linear;
   visibility: visible;
-  
   @include small-break {
     gap: 1rem;
   }
