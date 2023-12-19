@@ -2,6 +2,9 @@
 
 .empty {
   font-weight: 600;
+  @include mid-break {
+    height: 24vh;
+  }
 }
 
 .row {

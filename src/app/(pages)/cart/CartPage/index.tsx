@@ -96,9 +96,7 @@ export const CartPage: React.FC<{
                         <div className={classes.rowContent}>
                           {!stripeProductID && (
                             <p className={classes.warning}>
-                              {
-                                'This product is not yet connected to Stripe. To link this product, '
-                              }
+                              {''}
                               <Link
                                 href={`${process.env.NEXT_PUBLIC_SERVER_URL}/admin/collections/products/${id}`}
                               >

@@ -1,0 +1,9 @@
+@import "../../../_css/common.scss";
+
+.logout {
+    height: 57vh;
+
+    @include mid-break {
+        height: 68vh;
+    }
+}

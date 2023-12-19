@@ -7,9 +7,11 @@
 
 .formWrapper {
   width: 66.66%;
+  height: 44vh;
 
   @include mid-break {
     width: 100%;
+    height: 58vh;
   }
 }
 
